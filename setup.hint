@@ -1,0 +1,8 @@
+category: Gnome
+requires: cygwin gdk-pixbuf2 glib2 gtk2-x11 libintl8 libX11_6 libxfce4util libxfcegui4 pango aspell
+sdesc: "Xfce dictionary"
+ldesc: "This program allows you to search different kinds of dictionary 
+services for words or phrases and shows you the result. Currently you 
+can query a Dict server(RFC 2229), any online dictionary service by 
+opening a web browser or search for words using the aspell/ispell 
+program."
