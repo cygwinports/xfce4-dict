@@ -9,20 +9,20 @@ program.
 Runtime requirements:
   cygwin-1.5.25-15
   aspell-0.60.0-5
-  gdk-pixbuf2-2.12.12-1
-  glib2-2.16.6-1
-  gtk2-x11-2.12.12-1
+  libgdk_pixbuf2.0_0-2.14.6-1
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.6-1
   libintl8-0.17-2
+  libpango1.0_0-1.20.5-1
   libX11_6-1.1.5-1
-  libxfce4util-4.5.91-1
-  libxfcegui4-4.5.91-1
-  pango-1.20.5-1
-  xfce4-panel-4.5.91-1
+  libxfce4util4-4.5.92-1
+  libxfcegui4_4-4.5.92-1
+  xfce4-panel-4.5.92-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-1
-  automake1.10-1.10.1-1
+  automake1.10-1.10.1-2
   binutils-20080624-2
   cygport-0.4.3-1
   gawk-3.1.6-1
@@ -32,7 +32,7 @@ Build requirements:
   make-3.81-1
   pkg-config-0.23a-2
   sed-4.1.5-2
-  xfce4-dev-tools-4.5.91-1
+  xfce4-dev-tools-4.5.92-1
 
 Canonical website:
   http://goodies.xfce.org/projects/applications/xfce4-dict
@@ -43,15 +43,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-dict-0.5.0-X-src.tar.bz2
+  unpack xfce4-dict-0.5.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-dict-0.5.0-X.cygport all
+  cygport ./xfce4-dict-0.5.2-X.cygport all
 
 This will create:
-  /usr/src/xfce4-dict-0.5.0-X-src.tar.bz2
-  /usr/src/xfce4-dict-0.5.0-X.tar.bz2
+  /usr/src/xfce4-dict-0.5.2-X-src.tar.bz2
+  /usr/src/xfce4-dict-0.5.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,11 +61,11 @@ Files included in the binary package:
   /usr/bin/xfce4-dict.exe
   /usr/lib/xfce4/panel-plugins/xfce4-dict-plugin.exe
   /usr/share/applications/xfce4-dict.desktop
-  /usr/share/doc/xfce4-dict-0.5.0/AUTHORS
-  /usr/share/doc/xfce4-dict-0.5.0/COPYING
-  /usr/share/doc/xfce4-dict-0.5.0/ChangeLog
-  /usr/share/doc/xfce4-dict-0.5.0/INSTALL
-  /usr/share/doc/xfce4-dict-0.5.0/README
+  /usr/share/doc/xfce4-dict-0.5.2/AUTHORS
+  /usr/share/doc/xfce4-dict-0.5.2/COPYING
+  /usr/share/doc/xfce4-dict-0.5.2/ChangeLog
+  /usr/share/doc/xfce4-dict-0.5.2/INSTALL
+  /usr/share/doc/xfce4-dict-0.5.2/README
   /usr/share/icons/hicolor/scalable/apps/xfce4-dict.svg
   /usr/share/locale/ar/LC_MESSAGES/xfce4-dict.mo
   /usr/share/locale/ca/LC_MESSAGES/xfce4-dict.mo
@@ -91,6 +91,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.5.2-1 -----
+Version bump.
 
 ----- version 0.5.0-1 -----
 Initial release for Cygwin.
