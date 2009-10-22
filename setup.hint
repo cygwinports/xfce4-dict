@@ -1,4 +1,4 @@
-category: Gnome
+category: Xfce
 requires: libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libX11_6 libxfce4util4 libxfcegui4_4 libpango1.0_0 aspell
 sdesc: "Xfce dictionary"
 ldesc: "This program allows you to search different kinds of dictionary 
