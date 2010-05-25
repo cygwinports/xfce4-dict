@@ -7,31 +7,31 @@ opening a web browser or search for words using the aspell/ispell
 program.
 
 Runtime requirements:
-  cygwin-1.7.0-49
+  cygwin-1.7.5-1
   aspell-0.60.0-5
-  libgdk_pixbuf2.0_0-2.16.2-1
-  libglib2.0_0-2.20.3-1
-  libgtk2.0_0-2.16.2-1
+  libgcc1-4.3.4-3
+  libgdk_pixbuf2.0_0-2.18.6-1
+  libglib2.0_0-2.22.4-2
+  libgtk2.0_0-2.18.6-1
   libintl8-0.17-11
-  libpango1.0_0-1.24.2-1
-  libX11_6-1.2-10
-  libxfce4util4-4.6.1-1
-  libxfcegui4_4-4.6.1-1
-  xfce4-panel-4.6.1-1
+  libpango1.0_0-1.26.2-1
+  libX11_6-1.3.3-1
+  libxfce4panel1-4.6.2-1
+  libxfce4util4-4.6.2-1
+  libxfcegui4_4-4.6.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  intltool-0.40.6-1
-  libtool-2.2.7a-13
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.20.51-2
+  cygport-0.9.85-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  intltool-0.41.1-1
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
-  sed-4.1.5-2
   xfce4-dev-tools-4.6.0-10
 
 Canonical website:
@@ -43,53 +43,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack xfce4-dict-0.5.3-X-src.tar.bz2
+  unpack xfce4-dict-0.6.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./xfce4-dict-0.5.3-X.cygport all
+  cygport ./xfce4-dict-0.6.0-X.cygport all
 
 This will create:
-  /usr/src/xfce4-dict-0.5.3-X-src.tar.bz2
-  /usr/src/xfce4-dict-0.5.3-X.tar.bz2
+  /usr/src/xfce4-dict-0.6.0-X-src.tar.bz2
+  /usr/src/xfce4-dict-0.6.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /etc/postinstall/xfce4-dict.sh
-  /usr/bin/xfce4-dict.exe
-  /usr/lib/xfce4/panel-plugins/xfce4-dict-plugin.exe
-  /usr/share/applications/xfce4-dict.desktop
-  /usr/share/doc/xfce4-dict/AUTHORS
-  /usr/share/doc/xfce4-dict/COPYING
-  /usr/share/doc/xfce4-dict/ChangeLog
-  /usr/share/doc/xfce4-dict/README
-  /usr/share/icons/hicolor/scalable/apps/xfce4-dict.svg
-  /usr/share/locale/ar/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/ca/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/cs/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/da/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/de/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/en_GB/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/eu/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/fr/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/gl/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/hu/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/id/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/lv/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/nl/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/pl/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/pt_BR/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/pt_PT/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/uk/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/locale/ur/LC_MESSAGES/xfce4-dict.mo
-  /usr/share/man/man1/xfce4-dict.1.gz
-  /usr/share/xfce4/panel-plugins/xfce4-dict-plugin.desktop
-
-------------------
-
 Port Notes:
+
+----- version 0.6.0-1 -----
+Version bump.
 
 ----- version 0.5.3-1 -----
 Initial release for Cygwin 1.7. 
