@@ -1,7 +1,7 @@
 inherit xfce4
 
 NAME="xfce4-dict"
-VERSION=0.7.1
+VERSION=0.7.2
 RELEASE=1
 CATEGORY="Xfce"
 SUMMARY="Xfce dictionary"
@@ -9,5 +9,26 @@ DESCRIPTION="This program allows you to search different kinds of dictionary
 services for words or phrases and shows you the result. Currently you can
 query a Dict server(RFC 2229), any online dictionary service by opening a web
 browser or search for words using the aspell/ispell program."
-REQUIRES="enchant"
 HOMEPAGE="http://goodies.xfce.org/projects/applications/xfce4-dict"
+
+PKG_NAMES="${NAME} ${NAME}-common ${NAME}-plugin"
+xfce4_dict_REQUIRES="${NAME}-common"
+xfce4_dict_CONTENTS="
+	usr/bin/${NAME}.exe
+	usr/share/applications/${NAME}.desktop
+	usr/share/man/man1/${NAME}.1*
+"
+xfce4_dict_common_SUMMARY="${SUMMARY} (runtime data)"
+xfce4_dict_common_REQUIRES="enchant xdg-utils"
+xfce4_dict_common_CONTENTS="
+	etc/postinstall/${NAME}.sh
+	usr/share/doc/${NAME}/
+	usr/share/icons/hicolor/*/apps/${NAME}.*
+	usr/share/locale/*/LC_MESSAGES/${NAME}.mo
+"
+xfce4_dict_plugin_SUMMARY="${SUMMARY} panel plugin"
+xfce4_dict_plugin_REQUIRES="${NAME}-common"
+xfce4_dict_plugin_CONTENTS="
+	usr/lib/xfce4/panel/plugins/cyg${NAME/-}.dll
+	usr/share/xfce4/panel/plugins/${NAME}-plugin.desktop
+"
